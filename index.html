@@ -854,4 +854,69 @@ function submitModal(){
   btn.disabled=true;
   btn.textContent='Enviando...';
 
-  fetch('https://ap
+  fetch('https://api.web3forms.com/submit',{
+    method:'POST',
+    headers:{'Content-Type':'application/json','Accept':'application/json'},
+    body:JSON.stringify({
+      access_key:WEB3FORMS_ACCESS_KEY,
+      subject:'Nova solicitação de diagnóstico ('+nome+')',
+      from_name:'Site Almofada de Papel',
+      to:'contato@almofadadepapel.com.br',
+      nome:nome,
+      email:email||'-',
+      empresa:empresa||'-',
+      whatsapp:phone,
+      segmento:segmento||'-',
+      mensagem:msg||'-',
+      origem:window._modalSrc||'modal'
+    })
+  }).then(function(res){ return res.json(); }).then(function(data){
+    btn.disabled=false;
+    btn.textContent=origBtnText;
+    if(!data.success){ throw new Error(data.message||'Falha no envio'); }
+    document.getElementById('modalForm').style.display='none';
+    document.getElementById('modalSuccess').style.display='block';
+    setTimeout(closeModal, 4000);
+  }).catch(function(){
+    btn.disabled=false;
+    btn.textContent=origBtnText;
+    alert('Não foi possível enviar agora. Tente novamente em instantes ou fale pelo WhatsApp.');
+  });
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
+
+// ── Segment tabs ──
+(function(){
+  var tabs = document.getElementById('segTabs');
+  var mosaic = document.getElementById('aplicMosaic');
+  if(!tabs || !mosaic) return;
+  tabs.addEventListener('click', function(e){
+    var btn = e.target.closest('.seg-tab');
+    if(!btn) return;
+    var seg = btn.dataset.seg;
+    tabs.querySelectorAll('.seg-tab').forEach(function(t){ t.classList.remove('active'); });
+    btn.classList.add('active');
+    mosaic.querySelectorAll('.aplic-photo').forEach(function(card){
+      if(seg === 'todos' || card.dataset.seg === seg){
+        card.classList.add('visible');
+      } else {
+        card.classList.remove('visible');
+      }
+    });
+    mosaic.querySelectorAll('.aplic-photo').forEach(function(c){ c.classList.remove('aplic-tall'); });
+    var first = mosaic.querySelector('.aplic-photo.visible');
+    if(first) first.classList.add('aplic-tall');
+  });
+})();
+
+// ── FAQ accordion ──
+document.querySelectorAll('.faq-item').forEach(function(item){
+  item.querySelector('.faq-q').addEventListener('click', function(){
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); });
+    if(!isOpen) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>
