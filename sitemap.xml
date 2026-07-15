@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- HOME -->
+  <url>
+    <loc>https://www.almofadadepapel.com.br/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.almofadadepapel.com.br/"/>
+    <image:image>
+      <image:loc>https://www.almofadadepapel.com.br/void-filling-and-protective-packaging-with-paper-cushions_a.jpg</image:loc>
+      <image:title>Almofada de papel kraft para embalagem sustentável — preenchimento de caixa</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.almofadadepapel.com.br/paper_cushion_box.jpg</image:loc>
+      <image:title>Almofada de papel dentro de caixa — proteção premium kraft</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.almofadadepapel.com.br/AMESON-PaperEZ-Smart-Paper-cushion-machine-detail_02.jpg</image:loc>
+      <image:title>Máquina de almofada de papel automática AMESON PaperEZ</image:title>
+    </image:image>
+  </url>
+
+  <!-- LANDING PAGE (tráfego pago / consultoria) -->
+  <url>
+    <loc>https://www.almofadadepapel.com.br/lp/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.almofadadepapel.com.br/lp/"/>
+  </url>
+
+</urlset>

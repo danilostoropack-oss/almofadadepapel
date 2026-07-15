@@ -1,0 +1,90 @@
+# ============================================================
+# robots.txt — almofadadepapel.com.br
+# Atualizado: 2026-05-01
+# ============================================================
+
+# ---- Googlebot (crawl sem delay, acesso total) ----
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /cdn-cgi/
+Disallow: /*.php$
+Disallow: /*?utm_
+Disallow: /*?gclid=
+Disallow: /*?fbclid=
+Disallow: /*?ref=
+Disallow: /*?source=
+
+# ---- Googlebot-Image (libera todas as imagens) ----
+User-agent: Googlebot-Image
+Allow: /
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.gif$
+Allow: /*.svg$
+
+# ---- Bingbot ----
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /wp-admin/
+Crawl-delay: 2
+
+# ---- Yandex ----
+User-agent: Yandexbot
+Allow: /
+Disallow: /admin/
+Disallow: /wp-admin/
+Crawl-delay: 3
+
+# ---- DuckDuckBot ----
+User-agent: DuckDuckBot
+Allow: /
+
+# ---- AhrefsBot (SEO audit, permitido) ----
+User-agent: AhrefsBot
+Allow: /
+Crawl-delay: 5
+
+# ---- Scrapers e bots agressivos — bloqueio ----
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: serpstatbot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+# ---- Regra padrão para todos os demais ----
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /cdn-cgi/
+Disallow: /*.php$
+Disallow: /*?utm_
+Disallow: /*?gclid=
+Disallow: /*?fbclid=
+Disallow: /*?ref=
+
+# ---- Sitemap ----
+Sitemap: https://www.almofadadepapel.com.br/sitemap.xml
