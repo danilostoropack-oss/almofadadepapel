@@ -6,7 +6,7 @@
   <!-- HOME -->
   <url>
     <loc>https://www.almofadadepapel.com.br/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.almofadadepapel.com.br/"/>
@@ -24,13 +24,170 @@
     </image:image>
   </url>
 
-  <!-- LANDING PAGE (tráfego pago / consultoria) -->
+  <!-- LANDING PAGE -->
   <url>
     <loc>https://www.almofadadepapel.com.br/lp/</loc>
     <lastmod>2026-07-14</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- GUIA / GLOSSÁRIO / FAQ -->
+  <url>
+    <loc>https://www.almofadadepapel.com.br/guia/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.almofadadepapel.com.br/lp/"/>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/glossario/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/faq/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- COMPARATIVOS -->
+  <url>
+    <loc>https://www.almofadadepapel.com.br/comparativos/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/comparativos/almofada-de-papel-vs-plastico-bolha/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/comparativos/almofada-de-papel-vs-almofada-de-ar/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/comparativos/almofada-de-papel-vs-isopor-eps/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/comparativos/almofada-de-papel-vs-espumas/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/comparativos/almofada-de-papel-vs-packing-peanuts/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/comparativos/almofada-de-papel-vs-papel-picado-amassado/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/comparativos/almofada-de-papel-vs-papel-colmeia/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- SEGMENTOS -->
+  <url>
+    <loc>https://www.almofadadepapel.com.br/segmentos/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/segmentos/e-commerce/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/segmentos/autopecas/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/segmentos/cosmeticos/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/segmentos/eletronicos/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/segmentos/farmaceutica/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/segmentos/alimenticia/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/segmentos/industria/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/segmentos/vidros-farois-lanternas/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/segmentos/fulfillment-cd/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ALTERNATIVAS / FORNECEDORES -->
+  <url>
+    <loc>https://www.almofadadepapel.com.br/alternativas/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/alternativas/ranpak/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/alternativas/storopack/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.almofadadepapel.com.br/alternativas/sealed-air/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>

@@ -19,6 +19,8 @@
   <meta name="twitter:description" content="Consultoria especializada em almofada de papel kraft. Elimine plástico, reduza custos e melhore o unboxing dos seus clientes.">
   <meta name="twitter:image" content="https://www.almofadadepapel.com.br/paper_cushion_box.jpg">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Especialista em Almofada de Papel para Embalagem","url":"https://www.almofadadepapel.com.br/","telephone":"+55-11-96307-3163","email":"contato@almofadadepapel.com.br","logo":"https://www.almofadadepapel.com.br/logo.png","description":"Consultoria independente especializada em almofada de papel kraft para embalagem sustentável. Análise técnica e dimensionamento personalizado para substituir plástico bolha e isopor.","areaServed":"BR","serviceType":"Consultoria em Embalagem Sustentável com Papel Kraft"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Almofada de Papel","alternateName":"Especialista em Almofada de Papel para Embalagem","url":"https://www.almofadadepapel.com.br/","logo":"https://www.almofadadepapel.com.br/logo.png","email":"contato@almofadadepapel.com.br","telephone":"+55-11-96307-3163","address":{"@type":"PostalAddress","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"},"contactPoint":{"@type":"ContactPoint","telephone":"+55-11-96307-3163","contactType":"customer service","availableLanguage":"Portuguese"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Almofada de Papel","url":"https://www.almofadadepapel.com.br/","inLanguage":"pt-BR","description":"A referência brasileira em almofada de papel para embalagem: guias técnicos, comparativos e consultoria independente.","publisher":{"@type":"Organization","name":"Almofada de Papel","url":"https://www.almofadadepapel.com.br/"}}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -60,8 +62,10 @@
     .logo-icon svg{width:22px;height:22px;fill:#fff;}
     .logo-txt .n{font-size:1.0rem;font-weight:900;color:#fff;letter-spacing:.04em;text-transform:uppercase;}
     .logo-txt .s{font-size:.62rem;color:rgba(74,222,128,.7);letter-spacing:.06em;text-transform:uppercase;margin-top:2px;display:block;}
-    .nav-site-label{font-size:.65rem;color:rgba(255,255,255,.3);letter-spacing:.08em;text-transform:uppercase;padding:0 16px;border-left:1px solid var(--card-border);}
-    @media(max-width:768px){.nav-site-label{display:none;}}
+    .nav-links{display:flex;align-items:center;gap:18px;}
+    .nav-links a{font-size:.83rem;font-weight:600;color:rgba(255,255,255,.7);transition:color .2s;}
+    .nav-links a:hover{color:var(--green-light);}
+    @media(max-width:900px){.nav-links{display:none;}}
 
     /* ── NAV ── */
     nav{background:rgba(4,14,6,.85);backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);border-bottom:1px solid var(--card-border);position:sticky;top:0;z-index:200;padding:13px 0;box-shadow:0 1px 0 rgba(74,222,128,.08);}
@@ -231,7 +235,7 @@
 
     /* ── FOOTER ── */
     footer{background:#020804;color:var(--text);padding:48px 0 22px;}
-    .footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px;}
+    .footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:36px;}
     .footer-brand .fn{font-size:1.1rem;font-weight:800;color:#fff;}
     .footer-brand .fn em{color:var(--green-light);font-style:normal;}
     .footer-brand p{color:var(--muted);font-size:.85rem;margin-top:10px;line-height:1.7;max-width:250px;}
@@ -320,7 +324,14 @@
         <span class="s">Consultoria Técnica Independente</span>
       </div>
     </a>
-    <span class="nav-site-label">Diagnóstico Técnico Gratuito</span>
+    <div class="nav-links">
+      <a href="/guia/">Guia</a>
+      <a href="/comparativos/">Comparativos</a>
+      <a href="/segmentos/">Segmentos</a>
+      <a href="/alternativas/">Alternativas</a>
+      <a href="/glossario/">Glossário</a>
+      <a href="/faq/">FAQ</a>
+    </div>
     <div class="nav-right">
       <a href="tel:+5511963073163" class="nav-tel">&#128222; <em>(11) 96307-3163</em></a>
       <button class="btn-nav" onclick="openModal('nav')">Solicitar Análise</button>
@@ -599,7 +610,8 @@
         <p>A <strong style="color:var(--text);">almofada de papel para embalagem</strong>, também chamada de <em>paper cushion</em>, <em>kraft cushion</em> ou <em>void fill de papel</em>, é um material de proteção tridimensional produzido a partir de papel kraft ou reciclado por máquinas automáticas.</p>
         <p>Diferente do papel amassado (que é trabalhoso e inconsistente) e do plástico bolha (que não é reciclável), a almofada de papel é <strong style="color:var(--text);">produzida sob demanda</strong> por uma máquina compacta. O operador passa o rolo de papel e, em segundos, tem almofadas 3D prontas para embalar.</p>
         <p>O resultado é um sistema de <strong style="color:var(--text);">proteção para transporte</strong> que combina proteção real, visual premium e zero plástico na composição, tornando-se a escolha ideal para empresas que querem sustentabilidade com resultado concreto.</p>
-        <a href="#" onclick="openModal('educa');return false;" style="display:inline-flex;align-items:center;gap:8px;margin-top:24px;color:var(--green-light);font-weight:700;font-size:.9rem;transition:gap .2s;">Solicitar diagnóstico gratuito →</a>
+        <a href="/guia/" style="display:inline-flex;align-items:center;gap:8px;margin-top:24px;color:var(--green-light);font-weight:700;font-size:.9rem;transition:gap .2s;">Ler o guia completo da almofada de papel →</a>
+        <a href="#" onclick="openModal('educa');return false;" style="display:inline-flex;align-items:center;gap:8px;margin-top:10px;color:var(--green-light);font-weight:700;font-size:.9rem;transition:gap .2s;">Solicitar diagnóstico gratuito →</a>
       </div>
       <div class="educa-img">
         <img src="void-filling-and-protective-packaging-with-paper-cushions_g.jpg" alt="Almofada de papel kraft sustentável para embalagem de transporte">
@@ -689,6 +701,7 @@
         </tbody>
       </table>
     </div>
+    <p style="text-align:center;margin-top:28px;"><a href="/comparativos/" style="color:var(--green-light);font-weight:700;font-size:.92rem;">Ver todos os comparativos técnicos detalhados →</a></p>
   </div>
 </section>
 
@@ -726,6 +739,7 @@
         <div class="faq-a">A análise inicial é gratuita e sem compromisso. Conversamos sobre sua operação, o tipo de produto, o volume de pedidos e o processo atual. Com base nisso, apresento uma recomendação técnica com dimensionamento de consumo, estimativa de custo por pedido e projeção de resultado. Sem pressão comercial: o objetivo é ajudar a tomar a melhor decisão para a sua operação.</div>
       </div>
     </div>
+    <p style="text-align:center;margin-top:28px;"><a href="/faq/" style="color:var(--green-light);font-weight:700;font-size:.92rem;">Ver o FAQ completo com mais de 20 perguntas →</a></p>
   </div>
 </section>
 
@@ -754,12 +768,24 @@
         <p class="tel">&#128222; (11) 96307-3163</p>
       </div>
       <div>
-        <h4>Soluções</h4>
+        <h4>Conteúdo técnico</h4>
         <ul>
-          <li><a href="#o-que-e">O que é</a></li>
-          <li><a href="#como-funciona">Como funciona</a></li>
-          <li><a href="#materiais">Aplicações por segmento</a></li>
-          <li><a href="#comparativo">Comparativo técnico</a></li>
+          <li><a href="/guia/">Guia completo</a></li>
+          <li><a href="/comparativos/">Comparativos de materiais</a></li>
+          <li><a href="/segmentos/">Aplicações por segmento</a></li>
+          <li><a href="/alternativas/">Fornecedores e alternativas</a></li>
+          <li><a href="/glossario/">Glossário técnico</a></li>
+          <li><a href="/faq/">Perguntas frequentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Comparativos populares</h4>
+        <ul>
+          <li><a href="/comparativos/almofada-de-papel-vs-plastico-bolha/">vs. Plástico bolha</a></li>
+          <li><a href="/comparativos/almofada-de-papel-vs-almofada-de-ar/">vs. Almofada de ar</a></li>
+          <li><a href="/comparativos/almofada-de-papel-vs-isopor-eps/">vs. Isopor / EPS</a></li>
+          <li><a href="/segmentos/e-commerce/">Para e-commerce</a></li>
+          <li><a href="/segmentos/autopecas/">Para autopeças</a></li>
         </ul>
       </div>
       <div>

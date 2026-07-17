@@ -80,6 +80,7 @@ Allow: /
 Disallow: /admin/
 Disallow: /wp-admin/
 Disallow: /cdn-cgi/
+Disallow: /_src/
 Disallow: /*.php$
 Disallow: /*?utm_
 Disallow: /*?gclid=
