@@ -16,15 +16,25 @@ HEADER = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
 <meta name="description" content="{desc}">
-<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="{canonical}">
+<link rel="alternate" hreflang="pt-BR" href="{canonical}">
+<link rel="alternate" hreflang="x-default" href="{canonical}">
+<link rel="icon" href="/logo.png" type="image/png">
+<link rel="apple-touch-icon" href="/logo.png">
+<meta name="theme-color" content="#0a2410">
+<meta name="author" content="Almofada de Papel — Consultoria Técnica Independente">
 <meta property="og:type" content="article">
 <meta property="og:url" content="{canonical}">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:image" content="{base}/paper_cushion_box.jpg">
+<meta property="og:image:alt" content="Almofada de papel kraft protegendo produto dentro de caixa de papelão">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Almofada de Papel">
+<meta property="article:published_time" content="{published}">
+<meta property="article:modified_time" content="{updated}">
+<meta property="article:section" content="{tag}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="{desc}">
@@ -36,6 +46,7 @@ HEADER = """<!DOCTYPE html>
 {jsonld}
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conte&uacute;do</a>
 <header class="site-header">
   <div class="wrap header-inner">
     <a href="/" class="logo-wrap" aria-label="Almofada de Papel — página inicial">
@@ -64,6 +75,7 @@ HEADER = """<!DOCTYPE html>
     <p class="article-meta">Atualizado em {updated_br} &middot; Por Especialista em Almofada de Papel &middot; almofadadepapel.com.br</p>
   </div>
 </div>
+<main id="conteudo">
 <article class="content">
   <div class="{wrapclass}">
 """
@@ -82,6 +94,7 @@ CTA = """
 FOOTER = """
   </div>
 </article>
+</main>
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
@@ -171,10 +184,21 @@ def build_page(path):
          "dateModified": updated,
          "mainEntityOfPage": canonical,
          "image": f"{BASE}/paper_cushion_box.jpg",
+         "isPartOf": {"@type": "WebSite", "name": "Almofada de Papel", "url": BASE + "/"},
+         "about": {"@type": "Thing", "name": "Almofada de papel para embalagem (paper cushioning)"},
+         "keywords": meta.get("keywords", "almofada de papel, paper cushion, papel kraft embalagem, void fill, embalagem sustentável"),
          "author": {"@type": "Organization", "name": "Almofada de Papel — Consultoria Técnica", "url": BASE + "/"},
          "publisher": {"@type": "Organization", "name": "Almofada de Papel", "url": BASE + "/",
                         "logo": {"@type": "ImageObject", "url": f"{BASE}/logo.png"}}},
     ]
+
+    # ItemList automático para páginas hub (cards)
+    cards = re.findall(r'<a class="hub-card" href="([^"]+)">\s*<h3>(.*?)</h3>', body, re.S)
+    if cards:
+        schemas.append({"@context": "https://schema.org", "@type": "ItemList",
+                        "itemListElement": [{"@type": "ListItem", "position": i + 1,
+                                             "name": strip_tags(n), "url": BASE + u}
+                                            for i, (u, n) in enumerate(cards)]})
 
     # FAQPage automático a partir de <details> dentro de .faq-bloco
     faqs = []
@@ -194,6 +218,7 @@ def build_page(path):
         title=meta["title"], desc=meta["desc"], canonical=canonical, base=BASE,
         jsonld=jsonld, breadcrumb="".join(bc_html), tag=meta.get("tag", "Guia técnico"),
         h1=meta["h1"], lead=meta["lead"], updated_br=updated_br,
+        published=meta.get("published", "2026-07-17"), updated=updated,
         wrapclass=("wrap" if meta.get("wide") else "wrap-narrow"),
         a_guia=act("guia"), a_comp=act("comparativos"), a_seg=act("segmentos"),
         a_alt=act("alternativas"), a_glos=act("glossario"), a_faq=act("faq"),
